@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=M+PLUS+Rounded+1c&family=Mali&display=swap');
+
+@font-face {
+    font-family: Nyashi;
+    src: url('https://pctkpp.github.io/tnbt2022/font/Nyashi.otf');
+}
+
+@font-face {
+    font-family: FC rainbow;
+    src: url('https://pctkpp.github.io/tnbt2022/font/fc-rainbow.otf');
+    unicode-range: U+E00–E7F;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: gray  ;
+    margin: 0;
+}
+
+.background{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', 'Mali', cursive;
+    text-align: center;
+    background-image: url(Assets/Tanabata_background.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    position: relative;
+}
+
+.web_components{
+    top: 1000px;
+}
+
+.header_over1 { /* title background*/
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.header_over2 { /* wind background*/
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.header_over3 { /* hand background*/
+    position: absolute ;
+    top: 80%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.header_over4 { /* bottom background*/
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nbg {
+    width: 100vw;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+button {
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+    height: 40px;
+    width: 270px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    color: #372791;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.click-button {
+    color: rgb(30, 30, 31);
+    background-color: rgb(231, 240, 239);
+    border-radius: 5px;
+}
+
+.title {
+    margin-bottom: 50px;
+    color: white;
+    text-shadow: #FC0 0px 0 5px;
+}
+
+.popupstory {
+    width: 800px;
+    height: 500px;
+    background-color: #7cddf7;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: 15px 30px 15px;
+    visibility: hidden;
+}
+
+
+.popup button {
+    width: 10%;
+    background-color: #3773db;
+    color: white;
+}
+
+.open-popup_story {
+    visibility: visible;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 60%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.ovl {
+    visibility: visible;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 30px;
+    visibility: hidden;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card>.wwish {
+    text-align: center;
+    white-space: initial;
+}
+
+.card>.wname {
+    position: fixed;
+    top: 480px;
+
+    width: 280px;
+    text-align: center;
+}
+
+.card-open {
+    visibility: visible;
+}
+
+.bamboo {
+    margin-top: 50px;
+}
+
+.bamboo img {
+    width: 80vw;
+    max-width: 700px;
+    cursor: pointer;
+}
+
+.makewish {
+    width: 450px;
+    background-color: #e8b7ed;
+    border-radius: 6px;
+    padding: 10px;
+    margin: auto;
+}
+
+input[type=text] {
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', 'Mali', cursive;
+    font-size: 1em;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #ff7e0d;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    line-height: 2.5em !important;
+}
+
+.tanzaku {
+    width: 320px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.makewish button {
+    margin-bottom: 30px;
+    background-color: #7e58d6;
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .makewish {
+        width: 320px;
+    }
+
+    .popup {
+        width: 250px;
+    }
+}
+
+.bottom_bg {
+    margin: 0;
+    padding: 0;
+    background-image: url(Assets/Tanabata_Separates_Layer-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+.choice1{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choice2{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choice3{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choice4{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choice5{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choice6{
+    background-color: #372791;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+/** {
+    box-sizing: border-box
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+  }
+  
+  .slides {
+    display: none
+  }
+  
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .photos {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn-responsive {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+  
+  @media (max-width:760px) {
+    .btn-responsive {
+      padding: 1px 5px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-radius: 3px;
+    }
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }*/
+
+  #gallerywrapper {
+    width:640px;
+    height:450px;
+    margin:0 auto;
+    position:relative;
+    font-family:verdana, arial, sans-serif;
+} 
+
+#gallerywrapper #gallery {
+    position:absolute;
+    left:0;
+    top:0;
+    height:450px;
+    width:640px;
+    overflow:hidden;
+    text-align:center;
+} 
+
+#gallerywrapper #gallery div {
+    width:640px; height:900px; 
+    padding-top:10px; 
+    position:relative;
+} 
+
+#gallerywrapper #gallery div img {
+    clear:both; 
+    display:block; 
+    margin:0 auto; 
+    border:0;
+} 
+
+#gallerywrapper #gallery div h3 {
+    padding:10px 0 0 0; 
+    margin:0; 
+    font-size:18px;
+} 
+
+#gallerywrapper #gallery div p {
+    padding:5px 0; 
+    margin:0; 
+    font-size:12px; 
+    line-height:18px;
+} 
+
+#gallery .previous{ 
+    display:inline;
+    float:left;
+    margin-left:80px;
+    text-decoration:none;
+} 
+
+#gallery .next{ 
+    display:inline;
+    float:right;
+    margin-right:80px;
+    text-decoration:none;
+}
